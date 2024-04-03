@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metricas del software</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediaqueris.css">
+</head>
+<body>
+    <header class="menu">
+    </header>
+        <ul>
+            <li class="list"><a href="contenido/4_2.html">Métricas del modelo de análisis</a></li>
+            <li class="list"><a href="contenido/4_3.html">Métrica del modelo del diseño</a></li>
+            <li class="list"><a href="contenido/4_4.html">Métricas de código fuente</a></li>
+            <li class="list"><a href="contenido/4_5.html">Métricas para pruebas</a></li>
+            <li class="list"><a href="contenido/4_6.html">Métricas de mantenimiento</a></li>
+        </ul>
+    </nav>
+    <section>
+        <img class="img1" src="/img/iStock_000034363940_Small.webp" alt="imagen informativa">
+        <h2 class="title1">Las Métricas y la Calidad de Software</h2>
+        <p class="parr1">Las métricas son medidas cuantitativas que se utilizan para evaluar el progreso, la calidad, la productividad y el estado del proceso de desarrollo de software. Te ayudan a entender la eficiencia, confiabilidad y rendimiento del software, asegurando que cumpla con los estándares y requisitos establecidos.</p>
+
+    </section>
+
+    <div>
+        <label for="btn-calidad">
+          <button id="btn-calidad">¿Qué es calidad?</button>
+        </label>
+        
+        <p id="info-calidad" style="display: none;">
+            <img src="/img/iStock_000034363940_Small.webp" alt="imagen" width="50px" height="50px"> <br>
+            es un conjunto de características que determinan si un software cumple con los requisitos establecidos y si es capaz de satisfacer las necesidades de los usuarios. Se trata de un concepto multidimensional que abarca diversos aspectos, como:
+        </p>
+        <ul id="info-aspectos" style="display: none;">
+            <li>Funcionalidad: El software debe cumplir con las funcionalidades para las que fue diseñado, realizando las tareas y procesos de forma correcta y eficiente.</li><br>
+            <li>Rendimiento: El software debe funcionar de manera rápida, confiable y sin errores, incluso bajo condiciones de carga o uso intenso.</li><br>
+            <li>Usabilidad: El software debe ser fácil de aprender, usar y comprender, incluso para usuarios no expertos. La interfaz de usuario debe ser intuitiva y organizada, facilitando la interacción con el software.</li><br>
+            <li>Mantenimiento: El software debe ser fácil de modificar, corregir y actualizar, permitiendo su evolución y adaptación a nuevas necesidades o cambios en el entorno.</li><br>
+            <li>Seguridad: El software debe proteger la información confidencial y sensible, evitando accesos no autorizados, ataques cibernéticos o pérdida de datos.</li><br>
+            <li>Portabilidad: El software debe ser adaptable a diferentes plataformas o sistemas operativos, permitiendo su ejecución en distintos entornos.</li><br>
+            <li>Escalabilidad: El software debe ser capaz de crecer y adaptarse a nuevas necesidades, aumentando su capacidad de procesamiento o almacenamiento sin afectar su rendimiento.</li><br>
+            <li>Documentación: El software debe contar con documentación clara, completa y actualizada que facilite su comprensión, uso y mantenimiento.</li><br>
+        </ul>
+        
+      </div>
+      <script>
+        function mostrarInfoImagen() {
+          let info = document.getElementById("info-imagen");
+          if (info.style.display === "none") {
+            info.style.display = "block";
+          } else {
+            info.style.display = "none";
+          }
+        }
+        
+        document.getElementById("btn-calidad").addEventListener("click", mostrarInfoImagen);
+
+        function mostrarInfoCalidad() {
+          let info = document.getElementById("info-calidad");
+          if (info.style.display === "none") {
+            info.style.display = "block";
+          } else {
+            info.style.display = "none";
+          }
+        }
+        
+        document.getElementById("btn-calidad").addEventListener("click", mostrarInfoCalidad);
+
+        function mostrarInfoAspectos() {
+          let info = document.getElementById("info-aspectos");
+          if (info.style.display === "none") {
+            info.style.display = "block";
+          } else {
+            info.style.display = "none";
+          }
+        }
+        
+        document.getElementById("btn-calidad").addEventListener("click", mostrarInfoAspectos);
+        </script>
+
+<div>
+    <label for="btn-efe">
+      <button id="btn-vce">¿Qué es calidad?</button>
+    </label>
+    <p id="info-calidad" style="display: none;">es un conjunto de características que determinan si un software cumple con los requisitos establecidos y si es capaz de satisfacer las necesidades de los usuarios. Se trata de un concepto multidimensional que abarca diversos aspectos, como:</p>
+  </div>
+  <script>
+    function mostrarInfoCalidad() {
+      let info = document.getElementById("info-vevce");
+      if (info.style.display === "none") {
+        info.style.display = "block";
+      } else {
+        info.style.display = "none";
+      }
+    }
+    
+    document.getElementById("btn-cve").addEventListener("click", mostrarInfoCalidad);
+    </script>
+
+    
+</body>
+</html>

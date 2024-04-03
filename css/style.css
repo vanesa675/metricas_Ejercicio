@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+.menu{
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.list a{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding:0%;
+    display: block;
+}
+
+.list a:hover{
+    background-color: rgb(156, 195, 252);
+    color: rgb(28, 32, 108);
+}
+
+.img1 {
+    padding-top: 10%;
+    width: 100%;
+    height: 90px;
+}
+
+.title1 {
+    text-align: center;
+    padding: 3%;
+}
+
+.parr1{
+    text-align: center;
+    padding: 3%;
+}
+
+
+  #btn-calidad {
+    /* Propiedades generales */
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+    
+    /* Propiedades adicionales */
+    border: none;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  
+  }
+
+  #btn-calidad:hover{
+    background-color: rgb(156, 195, 252);
+    color: rgb(28, 32, 108);
+  }
+
+  #info-Imagen{
+    padding-top: 10%;
+    width: 100%;
+    height: 90px;
+}
+  
