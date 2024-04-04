@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metricas del software</title>
+    <title>Las Metricas y la calidad del software</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/mediaqueris.css">
 </head>
@@ -12,11 +12,11 @@
     <header class="menu">
     </header>
         <ul>
-            <li class="list"><a href="contenido/4_2.html">Métricas del modelo de análisis</a></li>
-            <li class="list"><a href="contenido/4_3.html">Métrica del modelo del diseño</a></li>
-            <li class="list"><a href="contenido/4_4.html">Métricas de código fuente</a></li>
-            <li class="list"><a href="contenido/4_5.html">Métricas para pruebas</a></li>
-            <li class="list"><a href="contenido/4_6.html">Métricas de mantenimiento</a></li>
+            <li class="list"><a href="../contenido/4_2.html">Métricas del modelo de análisis</a></li>
+            <li class="list"><a href="../contenido/4_3.html">Métrica del modelo del diseño</a></li>
+            <li class="list"><a href="../contenido/4_4.html">Métricas de código fuente</a></li>
+            <li class="list"><a href="../contenido/4_5.html">Métricas para pruebas</a></li>
+            <li class="list"><a href="../contenido/4_6.html">Métricas de mantenimiento</a></li>
         </ul>
     </nav>
     <section>
@@ -27,12 +27,54 @@
     </section>
 
     <div>
+      <label for="btn-Metricas">
+        <button id="btn-Metricas">¿Que son las metricas del software?</button>
+      </label>
+      
+      <p id="info-Metricas" style="display: none;">
+          
+          Una métrica es un estándar de medida de un grado en el que un sistema o proceso de software posee alguna propiedad. Aunque una métrica no es una medida (las métricas son roles o funciones, mientras que las mediciones son números obtenidos por aplicación de tales métricas), con frecuencia ambos términos son usados como si fueran sinónimos. <br>
+          Las métricas del software se utilizan para medir diversos aspectos del software, como:
+      </p>
+      <ul id="info-aspectos1" style="display: none;">
+          <li>Tamaño: El tamaño del software se puede medir por el número de líneas de código, el número de puntos de función o el número de módulos.</li><br>
+          <li>Complejidad: La complejidad del software se puede medir por el número de caminos en el código, el número de ciclos anidados o el número de dependencias entre módulos.</li><br>
+          <li>Rendimiento: El rendimiento del software se puede medir por el tiempo de respuesta, la velocidad de procesamiento o la utilización de recursos.</li><br>
+          <li>Calidad: La calidad del software se puede medir por el número de defectos, la tasa de errores o el nivel de satisfacción del usuario.</li><br>
+          <li>Productividad: La productividad del software se puede medir por el número de líneas de código escritas por hora, el número de defectos encontrados por día o el número de puntos de función entregados por mes.</li><br>
+      </ul>
+      
+    <script>
+      function mostrarInfoMetricas() {
+        let info = document.getElementById("info-Metricas");
+        if (info.style.display === "none") {
+          info.style.display = "block";
+        } else {
+          info.style.display = "none";
+        }
+      }
+      
+      document.getElementById("btn-Metricas").addEventListener("click", mostrarInfoMetricas);
+
+      function mostrarInfoAspectos1() {
+        let info = document.getElementById("info-aspectos1");
+        if (info.style.display === "none") {
+          info.style.display = "block";
+        } else {
+          info.style.display = "none";
+        }
+      }
+      
+      document.getElementById("btn-Metricas").addEventListener("click", mostrarInfoAspectos1);
+      </script>
+
+    <div>
         <label for="btn-calidad">
-          <button id="btn-calidad">¿Qué es calidad?</button>
+          <button id="btn-calidad">¿Qué es la calidad del software?</button>
         </label>
         
         <p id="info-calidad" style="display: none;">
-            <img src="/img/iStock_000034363940_Small.webp" alt="imagen" width="50px" height="50px"> <br>
+            <img src="/img/iStock_000034363940_Small.webp" alt="imagen" width="100%" height="150px"> <br>
             es un conjunto de características que determinan si un software cumple con los requisitos establecidos y si es capaz de satisfacer las necesidades de los usuarios. Se trata de un concepto multidimensional que abarca diversos aspectos, como:
         </p>
         <ul id="info-aspectos" style="display: none;">
@@ -83,23 +125,9 @@
         </script>
 
 <div>
-    <label for="btn-efe">
-      <button id="btn-vce">¿Qué es calidad?</button>
-    </label>
-    <p id="info-calidad" style="display: none;">es un conjunto de características que determinan si un software cumple con los requisitos establecidos y si es capaz de satisfacer las necesidades de los usuarios. Se trata de un concepto multidimensional que abarca diversos aspectos, como:</p>
-  </div>
-  <script>
-    function mostrarInfoCalidad() {
-      let info = document.getElementById("info-vevce");
-      if (info.style.display === "none") {
-        info.style.display = "block";
-      } else {
-        info.style.display = "none";
-      }
-    }
-    
-    document.getElementById("btn-cve").addEventListener("click", mostrarInfoCalidad);
-    </script>
+
+<button class="Siguiente1"><a href="../contenido/Visión_General.html">Siguiente</a></button>
+</div>
 
     
 </body>
